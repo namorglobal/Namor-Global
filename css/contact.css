@@ -1,0 +1,111 @@
+.contact-content {
+  padding: 100px 0;
+  background: #fdfdfd;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+/* Left Section */
+.contact-info-section {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+}
+
+.contact-info-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  border-left: 4px solid #ff2e63;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+  color: #111;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.info-icon {
+  font-size: 1.8rem;
+  color: #ff2e63;
+}
+
+.info-content h4 {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.info-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Social links */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-link {
+  color: #ff2e63;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #e02656;
+  transform: scale(1.1);
+}
+
+/* Right Side: Office Hours */
+.office-hours {
+  background: #fff;
+  padding: 2rem;
+  border-left: 4px solid #ff2e63;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  align-self: flex-start;
+}
+
+.office-hours h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.office-hours p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .office-hours {
+    margin-top: 2rem;
+  }
+}
